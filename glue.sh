@@ -21,7 +21,6 @@ sleep 1
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "ExtensionInstallForcelist": ["blockddmmcjpfkbhanlgegpmjpfpfjka;https://ublock.r58playz.dev/update.xml"]
 }' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
 cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
 mount --bind /tmp/overlay/etc /etc
